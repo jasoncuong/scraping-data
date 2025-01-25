@@ -63,7 +63,7 @@ const scraper = (browser, url) =>
       console.log(">> Đã mở tab mới ...");
       await newPage.goto(url);
       console.log(">> Đã truy cập vào trang " + url);
-      await newPage.waitForSelector("#shopify-section-product-template");
+      await newPage.waitForSelector("#PageContainer");
       console.log(">> Đã load xong tag main ...");
 
       const scrapeData = {};
